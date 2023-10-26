@@ -1,0 +1,334 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    color: white;
+    font-family: "Poppins" , sans-serif;
+}
+
+.afternav {
+    background-color: black;
+}
+
+
+.header {
+    background-image: url(image/header-image.png);
+}
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 20px 20px;
+    z-index: 10;
+}
+
+
+.navbar-netflix {
+    height: 100%;
+    width: 125px;
+}
+
+.navbar-nav-items {
+
+    display: flex;
+    gap: 10px;
+}
+
+.netflix-logo {
+    
+    height: 100px;
+    cursor: pointer;
+    
+}
+
+.lang-dropdown {
+    background: transparent;
+    color: white;
+    border: none;
+}
+
+.dropdown-container {
+    border: 0.5px solid white;
+    padding: 0.3rem;
+    border-radius: 4px;
+    background: rgb(0, 0, 0, 0.4)
+}
+
+.signin-button {
+    border: #dc030f;
+    background-color: #dc030f;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    height: 31px;
+    width: 100px;
+    cursor: pointer;
+}
+
+
+.hero{
+    height: 700px;
+    border-bottom: rgb(78, 74, 74) solid 10px;
+}
+
+
+.hero-bg-img-cont {
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+.hero-bg-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+        
+}
+
+.hero-bg-overlay {
+    position: absolute;
+    width: 100%;
+    inset: 0;
+    background-color: black;
+    opacity: 0.7;
+    height: 690px;
+    
+}
+
+
+.hero-card {
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+
+}
+
+.hero-title {
+    font-weight: 600;
+    font-size: 3rem;
+
+}
+
+.hero-subtitle,
+hero-desc {
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+.email-signup {
+    background: rgb(0, 0, 0, 0.6);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    overflow: hidden;
+    border: #fff solid 0.6px;
+    width: 500px;
+    text-align: center;
+   
+    
+}
+
+.email-signup input {
+    flex: 1;
+    border: 0;
+    outline: 0;
+    margin-left: 20px;
+    background: transparent;
+    height: fit-content;
+    width: 100%;
+    color: #fff;
+    font-size: 16px;
+}
+
+.email-signup button {
+    background: #dc030f;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 15px 30px;
+}
+
+.features {
+    
+    font-size: 22px;
+    
+
+}
+
+.row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    width: 100%;
+    border-bottom: rgb(78, 74, 74) solid 10px;
+    padding: 50px 0;
+    
+    
+
+
+}
+
+.text-col {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.text-col h1 {
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.text-col p {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.img-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.img-col img {
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+.faq {
+    text-align: center;
+    font-size: 30px;
+}
+
+.faq h2 {
+    padding-top: 50px;
+    font-weight: bolder;
+    padding-bottom: 20px;
+}
+
+.ques {
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+
+.ques li {
+    list-style: none;
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.ques li label {
+
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+label::after {
+    content: '+';
+    font-size: 35px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.2s;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.ques .content {
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    font-size: 0;
+}
+
+.ques input[type="radio"]:checked + label +.content {
+    max-height: 500px;
+    padding: 30px 20px;
+    font-size: 20px;
+}
+
+
+.ques input[type="radio"]:checked + label::after {
+    transform: rotate(135deg);
+}
+
+
+.small {
+    padding-top: 50px;
+    font-size: 20px;
+    
+}
+.signuplast{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 80px;
+    border-bottom: rgb(78, 74, 74) solid 10px;;
+}
+
+
+.footer .row {
+    border-bottom: none;
+}
+.footer{
+    padding: 50px 2% 10px;
+}
+.footer p {
+    color: #777;
+    font-size: 18px;
+}
+
+.footer .col{
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+.footer .col a{
+    display: block;
+    color: #777;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.footer .dropdown-container {
+    width: fit-content;
+    background-color: #181818;
+    
+}
+
+.footer .p2{
+    font-size: 12px;
+    padding-top: 10px;
+    padding-bottom: 80px;
+}
